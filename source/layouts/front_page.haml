@@ -1,0 +1,13 @@
+= wrap_layout :layout do
+  %article
+    %h3
+      = data.page.title
+    .row
+      .large-12.columns
+        %img#welcome{src: "http://placehold.it/400x240&text=BoB Memorial"}/
+        = yield
+    %hr/
+    .row
+      .large-6.large-offset-3.columns
+        %img{src: "http://placehold.it/400x240&text=Capel Sign"}/
+

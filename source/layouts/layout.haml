@@ -2,52 +2,67 @@
   %meta{charset: "utf-8"}/
   %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
   / Use title if it's in the page YAML frontmatter
-  %title= data.page.title || "The Middleman"
+  %title= data.page.title || "Capel Le Ferne"
   = stylesheet_link_tag "app", "style"
   = javascript_include_tag "modernizr"
 %body{class: page_classes}
   .row
     .large-12.columns
-      .nav-bar.right
-        %ul.button-group
-          %li
-            %a.button{href: "#"} Link 1
-          %li
-            %a.button{href: "#"} Link 2
-          %li
-            %a.button{href: "#"} Link 3
-          %li
-            %a.button{href: "#"} Link 4
       %h1
-        Blog
-        %small This is my blog. It's awesome.
+        Capel-Le-Ferne
+        %small Chapel amongst the ferns
       %hr/
   .row
     .large-9.columns{role: "content"}
       = yield
     %aside.large-3.columns
-      %h5 Categories
-      %ul.side-nav
-        %li
-          %a{href: "#"} News
-        %li
-          %a{href: "#"} Code
-        %li
-          %a{href: "#"} Design
-        %li
-          %a{href: "#"} Fun
-        %li
-          %a{href: "#"} Weasels
-      .panel
-        %h5 Featured
-        %p Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.
-        %a{href: "#"} Read More →
+      %h5 Navigation
+      %nav
+        %ul.side-nav
+          %li
+            %a{href: "/"} Home Page
+          %li
+            %a{href: "/grapevine.html"} Grapevine
+          %li
+            %a{href: "/weather-station.html"} Weather Station
+          %li
+            %a{href: "/news.html"} News
+          %li
+            %a{href: "/whats-on.html"} What's On
+          %li
+            %a{href: "/village-hall.html"} Village Hall
+          %li
+            %a{href: "/community.html"} Community
+          %li
+            %a{href: "/parish-council.html"} Parish Council
+          %li
+            %a{href: "/farmers-market.html"} Farmers' Market
+          %li
+            %a{href: "/quiz-sheets.html"} Quiz Sheets
+          %li
+            %a{href: "/activities-and-clubs.html"} Activities and Clubs
+          %li
+            %a{href: "/local-business.html"} Local Business
+          %li
+            %a{href: "/business.html"} History
+          %li
+            %a{href: "/oye-plage.html"} Oye-Plage
+          %li
+            %a{href: "/useful-links.html"} Useful Links
+          %li
+            %a{href: "/small-ads.html"} Small Ads
+          %li
+            %a{href: "/capel-pics.html"} Capel Pics
+        .panel
+          %h5 Featured
+          %p Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.
+          %a{href: "#"} Read More →
   %footer.row
     .large-12.columns
       %hr/
       .row
         .large-6.columns
-          %p © Copyright no one at all. Go to town.
+          %p Copyright © 2014, Capel-le-Ferne Village Hall. All rights reserved.
         .large-6.columns
           %ul.inline-list.right
             %li

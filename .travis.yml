@@ -10,7 +10,7 @@ env:
 before_script:
   - sudo apt-get install ncftp
   - npm install -g bower
-  - bower install -f
+  - bower install
 
 script: bundle exec middleman build
 

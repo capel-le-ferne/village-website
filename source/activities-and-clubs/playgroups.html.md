@@ -1,5 +1,7 @@
+---
+title: Playgroups
+---
 
-Playgroups
 CAPEL-LE-FERNE PRE-SCHOOL
 
 A not for profit organisation serving the community since 1969

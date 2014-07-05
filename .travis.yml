@@ -1,8 +1,17 @@
-lannguage: ruby
+language: ruby
+
 rvm:
-  - 2.1.1
+- 2.1.1
+
+env:
+  global:
+    secure: Tn6I8aYReHa9Yisl2Ey9OSTK64Mc+ChWBCbNpTrclVmAt05kCzaaP2NPHnNxCdLeo186IMxnxLaNAbpN9N2e6XzzUoZj2OWYi+TNGjUuCciOxD6RpavB8lWJKkpz9hPQwgfre6W3MH9AdrOIvQcW/ZC7CLp8tvhjHVyy0J6eDIM=
 
 before_script:
+  - sudo apt-get install ncftp
   - npm install -g bower
   - bower install -f
+
 script: bundle exec middleman build
+
+after_success: "ncftpput -R -v -u $FTP_USER -p $FTP_PASSWORD capel-le-ferne.org /beta build"

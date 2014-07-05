@@ -5,7 +5,8 @@
 
 ## About
 
-This is the source-code for the new website at http://www.capel-le-ferne.org (Currently beta)
+This is the source-code for the new website at http://beta.capel-le-ferne.org
+(Site access currently restricted to avoid confusing people)
 
 ## For site administrators
 

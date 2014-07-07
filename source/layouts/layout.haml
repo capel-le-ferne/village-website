@@ -2,7 +2,7 @@
   %meta{charset: "utf-8"}/
   %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
   / Use title if it's in the page YAML frontmatter
-  %title= "Capel - #{data.page.title}" || "Capel Le Ferne"
+  %title= "Capel - #{current_page.data.title}" || "Capel Le Ferne"
   = stylesheet_link_tag "app", "style"
   = javascript_include_tag "modernizr"
 %body{class: page_classes}

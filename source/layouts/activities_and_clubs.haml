@@ -1,0 +1,13 @@
+= wrap_layout :layout do
+  %article
+    %h3
+      = data.page.title
+      = yield
+
+    - sitemap.resources.sort{|a,b| a.url <=> b.url  }.each do |resource|
+      - if /activities-and-clubs\//.match(resource.path)
+        %hr
+        %h4= resource.metadata[:page]['title']
+        - para_array = resource.render(:layout => false).split("\n\n")
+        = para_array[0] + para_array[1]
+        = link_to "Read More", resource.url

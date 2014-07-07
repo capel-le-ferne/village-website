@@ -16,5 +16,5 @@ script: bundle exec middleman build
 
 after_success:
   - cd build
-  - rm -bower_components
+  - rm -rf bower_components
   - "ncftpput -R -v -u $FTP_USER -p $FTP_PASSWORD capel-le-ferne.org /beta ."

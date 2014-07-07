@@ -1,5 +1,5 @@
 ---
-title: Playgroups
+title: Short Mat Bowls Associeation
 ---
 
 Contacts:
